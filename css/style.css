@@ -249,3 +249,10 @@ span {
     
 }
 
+.mfb-component__button--child, .mfb-component__button--main {
+    background-color: var(--secondarycolor) !important;
+}
+
+#menu ion-icon {
+    font-size: 32px;
+}

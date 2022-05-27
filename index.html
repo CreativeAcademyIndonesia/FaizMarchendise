@@ -22,6 +22,9 @@
     <!-- Icon -->
     <link rel="icon" href="assets/LogoFaiz.png" type="image/x-icon">
 
+    <!-- Link Floating -->
+    <link rel="stylesheet" href="css/mfb.min.css">
+
 </head>
 
 <body>
@@ -45,7 +48,7 @@
                     </div>
                     <div class="nav-left d-lg-flex d-block ms-auto">
                         <!-- <button class="outless-button me-2">Daftar</button> -->
-                        <button class="primary-button mt-2 mt-lg-0">Hubungi Kami</button>
+                        <button class="primary-button mt-2 mt-lg-0" onclick=whatsapp()>Hubungi Kami</button>
                     </div>
                 </div>
 
@@ -65,18 +68,17 @@
         <!-- </div> -->
     </div>
     <!-- End Navbar -->
-
     <!-- Hero Section -->
     <section id="hero">
         <div class="container h-100">
             <div class="row h-100 d-flex align-items-center">
                 <div class="col-md-6 order-md-1 order-2 ">
-                    <h1 class="fw-bold">Jasa Custom Enamel Terbaik Terpercaya Berkualitas Premium</h1>
+                    <h1 class="fw-bold">Home Produksi Yang Menerima Jasa Pembuatan Segala Macam Marchendise Logam</h1>
                     <p class="mt-2">Kami mejediakan berbagai macam jasa, Pin enamel custom bandung, Jasa Pembuatan
                         Medali Bandung, Pin cor Bandung, Gantungan kunci akrilik bandung, dan aneka merchandise promosi
                         lainnya. dengan harga yang menarik dan kualitas Terbaik</p>
 
-                    <button class="primary-button mt-4">Pesan Sekarang</button>
+                    <button class="primary-button mt-4" onclick=whatsapp()>Pesan Sekarang</button>
                 </div>
 
                 <div class="col-md-6 order-md-2 order-1 d-flex justify-content-center align-items-center">
@@ -149,7 +151,7 @@
                         enamel kami juga memproduksi merchandise lainnya seperti gantungan kunci bahan karet dan
                         akrilik, Pin medali, Pin cor dan aneka merchandise lainnya
                     </p>
-                    <button class="primary-button mt-4">Hubungi Kami</button>
+                    <button class="primary-button mt-4" id="hubungi-nav" onclick=email()>Hubungi Kami</button>
                 </div>
                 <div class="col-lg-6 order-lg-2 order-1 justify-content-center align-items-center d-flex mb-5 mb-lg-0">
                     <img src="assets/2. Email Campaign.png" alt="">
@@ -426,7 +428,8 @@
                 </div>
                 <div
                     class="col-lg-2 col-md-3 col-7 mt-4 mt-lg-4 d-flex justify-content-center align-items-center flex-column">
-                    <a href="#" class="contact-info-wraper d-flex justify-content-center align-items-center">
+                    <a href="https://api.whatsapp.com/send?phone=6281317214457&text=Hallo%20Saya%20tertarik%20dengan%20jasa%20dan%20produk%20anda%2C%20saya%20ingin%20order%20sesuatu"
+                        class="contact-info-wraper d-flex justify-content-center align-items-center">
                         <div class="contact-info-wraper2 d-flex justify-content-center align-items-center">
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </div>
@@ -437,7 +440,8 @@
 
                 <div
                     class="col-lg-2 col-md-3 col-7 mt-4 mt-lg-4 d-flex justify-content-center align-items-center flex-column">
-                    <a href="#" class="contact-info-wraper d-flex justify-content-center align-items-center">
+                    <a href="mailto:faizmarchendise@gmail.com"
+                        class="contact-info-wraper d-flex justify-content-center align-items-center">
                         <div class="contact-info-wraper2 d-flex justify-content-center align-items-center">
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
@@ -447,7 +451,8 @@
 
                 <div
                     class="col-lg-2 col-md-3 col-7 mt-4 mt-lg-4 d-flex justify-content-center align-items-center flex-column">
-                    <a href="#" class="contact-info-wraper d-flex justify-content-center align-items-center">
+                    <a href="tel:081317214457"
+                        class="contact-info-wraper d-flex justify-content-center align-items-center">
                         <div class="contact-info-wraper2 d-flex justify-content-center align-items-center">
                             <ion-icon name="call-outline"></ion-icon>
                         </div>
@@ -458,6 +463,39 @@
         </div>
     </section>
     <!-- End Section Contact -->
+
+    <ul id="menu" class="mfb-component--br mfb-slidein-spring" data-mfb-toggle="hover">
+        <li class="mfb-component__wrap">
+            <a href="#" class="mfb-component__button--main">
+                <!-- <ion-icon name="chatbubble-ellipses-outline"></ion-icon> -->
+                <ion-icon name="chatbubbles-outline" class="position-absolute top-50 start-50 translate-middle">
+                </ion-icon>
+            </a>
+            <ul class="mfb-component__list">
+                <li>
+                    <a href="tel:081317214457" data-mfb-label="Call Me" class="mfb-component__button--child">
+                        <ion-icon name="call-outline" class="position-absolute top-50 start-50 translate-middle">
+                        </ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=6281317214457&text=Hallo%20Saya%20tertarik%20dengan%20jasa%20dan%20produk%20anda%2C%20saya%20ingin%20order%20sesuatu"
+                        data-mfb-label="Whatsapp Me" class="mfb-component__button--child">
+                        <ion-icon name="logo-whatsapp" class="position-absolute top-50 start-50 translate-middle">
+                        </ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:faizmarchendise@gmail.com" data-mfb-label="Email Me"
+                        class="mfb-component__button--child">
+                        <ion-icon name="mail-outline" class="position-absolute top-50 start-50 translate-middle">
+                        </ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
     <!-- Map -->
     <section id="map">
@@ -511,9 +549,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
+    <script src="js/mfb.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
