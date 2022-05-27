@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1366952/public_html/temancurhat/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp product.html $DEPLOYPATH
+    - /bin/cp KelasPremium.html $DEPLOYPATH
+    - /bin/cp -R Assets $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R javascript $DEPLOYPATH
