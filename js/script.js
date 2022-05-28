@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
 
 
 function whatsapp() {
-    window.location.href ="https://api.whatsapp.com/send?phone=6281317214457&text=Hallo%20Saya%20tertarik%20dengan%20jasa%20dan%20produk%20anda%2C%20saya%20ingin%20order%20sesuatu";
+    window.location.href ="https://api.whatsapp.com/send?phone=85722234393&text=Hallo%20Saya%20tertarik%20dengan%20jasa%20dan%20produk%20anda%2C%20saya%20ingin%20order%20sesuatu";
 }
 
 function email() {
